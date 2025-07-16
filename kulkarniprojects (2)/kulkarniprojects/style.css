@@ -2,45 +2,58 @@
         box-sizing: border-box;
         /* margin: 0; */
         padding: 0;
-        font-family: "Arial", sans-serif;
+        font-family: "IBM Plex Sans", sans-serif;
         line-height: 1;
       }
 
       body {
+        font-family: 'Lora', serif;
         background-color: white;
         color: #333;
-        line-height: 1.2;
+        line-height: 1.6;
+        font-weight: 600;
       }
+      h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
 
-      .logo-container {
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-    }
+/* Subtext, buttons, captions, footer */
+.logo-sub,
+button,
+.service-btn,
+.footer-column p,
+.footer-column a,
+.instagram-cta p,
+.review-card p,
+.founder-card p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+}
+/* Add elegant hover effects
+a:hover,
+.service-btn:hover,
+.footer-column p:hover {
+  color: #b28b2d;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
 
-    .logo-main {
-      font-size: 64px;
-      font-weight: 700;
-      color: #0a0d1c;
-      position: relative;
-      display: inline-block;
-    }
+/* Slight animation for buttons 
+.service-btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.service-btn:hover {
+  transform: scale(1.05);
+}
+ */
 
-    .logo-main .star {
-      color: #b28b2d;
-      font-size: 28px;
-      position: absolute;
-      top: -1px;
-      right: -2px;
-    }
 
-    .logo-sub {
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-      letter-spacing: 0.3em;
-      color: #0a0d1c;
-      margin-top: 2px;
-      margin-bottom: 4px;
-    }
+      
       
 body.dark-mode {
   background-color: #0a0d1c;
@@ -179,6 +192,9 @@ body.dark-mode header {
         cursor: pointer;
         transition: all 0.3s ease;
         min-width: 180px;
+         font-family: 'IBM Plex Sans', sans-serif;
+         font-weight: 500;
+         letter-spacing: 0.5px;
       }
 
       .service-btn:hover {
@@ -367,7 +383,7 @@ body.dark-mode header {
       .instagram-cta p:hover {
        color: pink;        
        transform: scale(1); 
-       letter-spacing: 2px;    
+       letter-spacing: 4px;    
       }
 
 /* clients review */
@@ -582,6 +598,9 @@ body.dark-mode .footer-column a:hover {
       @media (max-width: 600px) {
   .agency-images img {
     width: 100%;           /* Full width on small screens */
+  }
+  .service-btn {
+    flex: 1 1 100%; /* Full width on small screens */
   }
 }
 @media (max-width: 480px) {
