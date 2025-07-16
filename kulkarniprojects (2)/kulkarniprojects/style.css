@@ -107,7 +107,7 @@ body.dark-mode #dark-mode-toggle {
 }
 
  header {
-width: 100%;
+  width: 100%;
   text-align: center;
   background-color: transparent; /* If logo has transparent bg */
   padding: 20px 0;
@@ -141,8 +141,10 @@ body.dark-mode header {
       .logo img{
         max-width: 100%;
         height: auto;
-        display: inline-block;
+        /* display: block; */
+        
       }
+      
 
       /* .logo h1 {
         font-size: 2.5rem;
@@ -598,7 +600,8 @@ body.dark-mode .footer-column a:hover {
 
       @media (max-width: 600px) {
   .agency-images img {
-    width: 100%;           /* Full width on small screens */
+    max-width: 80%;
+    padding: 10px 0;          
   }
   .service-btn {
     flex: 1 1 100%; /* Full width on small screens */
@@ -617,7 +620,7 @@ body.dark-mode .footer-column a:hover {
   }
 
   .logo img {
-    max-width: 120px;
+    width: 100%;
   }
 }
       @media (max-width: 768px) {
@@ -663,9 +666,12 @@ body.dark-mode .footer-column a:hover {
           justify-content: center;
         
         }
-        .logo img {
+        /* .logo img {
            max-width: 140px;
-        }
+        } */
+        .logo-container {
+          max-width: 200px;
+  }
       }
       @media (min-width: 900px) {
   .service-btn {
