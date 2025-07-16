@@ -1,8 +1,9 @@
 * {
         box-sizing: border-box;
-        margin: 0;
+        /* margin: 0; */
         padding: 0;
         font-family: "Arial", sans-serif;
+        line-height: 1;
       }
 
       body {
@@ -10,8 +11,49 @@
         color: #333;
         line-height: 1.2;
       }
-      
 
+      .logo-container {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .logo-main {
+      font-size: 64px;
+      font-weight: 700;
+      color: #0a0d1c;
+      position: relative;
+      display: inline-block;
+    }
+
+    .logo-main .star {
+      color: #b28b2d;
+      font-size: 28px;
+      position: absolute;
+      top: -1px;
+      right: -2px;
+    }
+
+    .logo-sub {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.3em;
+      color: #0a0d1c;
+      margin-top: 2px;
+      margin-bottom: 4px;
+    }
+      
+body.dark-mode {
+  background-color: #0a0d1c;
+  color: #ffffff;
+}
+
+body.dark-mode .logo-main {
+  color: #ffffff;
+}
+
+body.dark-mode .logo-sub {
+  color: #cccccc;
+}
 /* Light mode styles 
 /* body {
   background-color: #ffffff; /* Light background 
@@ -33,16 +75,17 @@ body.dark-mode {
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  background: #007bff;
+  border-radius: 50%;
+  background: #ffffff;
   color: #fff;
   font-size: 1.2rem;
-  z-index: 9999;
+  z-index: 999;
 }
 
 body.dark-mode #dark-mode-toggle {
   background: #ffa500;
   color: #000;
+  border-color: #555;
 }
 
 /* Content styling */
@@ -112,6 +155,8 @@ body.dark-mode header {
         color: #dbb221;
         text-align: center;
       }
+
+      
 /* services section */
 
       .services {
@@ -539,6 +584,14 @@ body.dark-mode .footer-column a:hover {
     width: 100%;           /* Full width on small screens */
   }
 }
+@media (max-width: 480px) {
+  #dark-mode-toggle {
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
       @media (max-width: 768px) {
         /* .logo h1 {
           font-size: 2rem;
@@ -553,6 +606,12 @@ body.dark-mode .footer-column a:hover {
           font-size: 1.5rem;
           align-self: center;
         } */
+          #dark-mode-toggle {
+    top: 14px;
+    right: 14px;
+    padding: 9px;
+    font-size: 1.1rem;
+  }
 
         .service-btn {
           min-width: 140px;
@@ -574,5 +633,6 @@ body.dark-mode .footer-column a:hover {
 
         .social-icons {
           justify-content: center;
+        
         }
       }
